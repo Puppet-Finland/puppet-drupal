@@ -1,0 +1,43 @@
+{
+  "name": "puppetfinland-drupal",
+  "version": "0.1.0",
+  "author": "PuppetFinland team, Mikko Vilpponen",
+  "summary": "Configure Drupal sites on Nginx/FPM",
+  "license": "BSD-2-Clause",
+  "source": "https://github.com/Puppet-Finland/puppet-drupal.git",
+  "project_page": "https://github.com/Puppet-Finland/puppet-sshd",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "18.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 5.0.0 < 7.0.0"
+    },
+    {
+      "name": "puppetfinland/nginx",
+      "version_requirement": ">= 2.0.0"
+    },
+    {
+      "name": "puppet/php",
+      "version_requirement": ">= 6.0.0"
+    }
+  ],
+  "pdk-version": "1.9.0",
+  "template-url": "file:///opt/puppetlabs/pdk/share/cache/pdk-templates.git",
+  "template-ref": "1.9.0-0-g7281db5"
+}
