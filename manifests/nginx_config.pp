@@ -14,6 +14,7 @@ class drupal::nginx_config (
     owner => 'root',
     group => 'root',
     mode => '0644',
+    notify => Service['nginx'],
   }
 
   file {['/etc/nginx/apps', '/etc/nginx/apps/drupal']:
