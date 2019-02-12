@@ -27,13 +27,13 @@ class drupal::nginx_config (
   }
 
   file {'/etc/nginx/dh_param.pem':
-    source => 'puppet:///modules/drupal/nginx/dh_param.pem.erb'
+    source => 'puppet:///modules/drupal/nginx/dh_param.pem'
   }
   file {'/etc/nginx/map_block_http_methods.conf':
-    source => 'puppet:///modules/drupal/nginx/map_block_http_methods.conf.erb'
+    source => 'puppet:///modules/drupal/nginx/map_block_http_methods.conf'
   }
   file {'/etc/nginx/mime.types':
-    source => 'puppet:///modules/drupal/nginx/mime.types.erb'
+    source => 'puppet:///modules/drupal/nginx/mime.types'
   }
   file {'/etc/nginx/apps/drupal/map_cache.conf':
     source => 'puppet:///modules/drupal/nginx/drupal/map_cache.conf'
