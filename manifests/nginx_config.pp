@@ -11,9 +11,9 @@ class drupal::nginx_config (
 {
 
   File {
-    user => 'root',
+    owner => 'root',
     group => 'root',
-    permissions => '0644',
+    mode => '0644',
   }
 
   file {'/etc/nginx/nginx.conf':
