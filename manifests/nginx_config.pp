@@ -16,6 +16,10 @@ class drupal::nginx_config (
     mode => '0644',
   }
 
+  file {['/etc/nginx/apps', '/etc/nginx/apps/drupal']:
+    ensure => 'directory',
+  }
+
   file {'/etc/nginx/nginx.conf':
     content => template('drupal/nginx/nginx.conf.erb')
   }
